@@ -1,47 +1,35 @@
-<script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
+  <div class="min-h-screen bg-white text-gray-800 font-rajdhani">
+    <Navbar />
+    <HeroSection />
+    <AboutSection />
+    <HeroVideoSection />  <!-- ← Agrega esta línea -->
+    <RecorridosSection />
+    <ContactSection />
+    <FooterSection />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
-
-  <main>
-    <TheWelcome />
-  </main>
+    <!-- Botón flotante WhatsApp -->
+    <a
+      href="https://wa.me/524423653316?text=Hola!%20Quiero%20agendar%20un%20recorrido%20con%20QuatriAdventure"
+      target="_blank"
+      class="whatsapp-btn"
+    >
+      <i class="bi bi-whatsapp"></i>
+    </a>
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-}
+<script setup>
+import Navbar from "./components/Navbar.vue";
+import HeroSection from "./components/HeroSection.vue";
+import AboutSection from "./components/AboutSection.vue";
+import HeroVideoSection from "./components/HeroVideoSection.vue"; // ← Importa el nuevo componente
+import RecorridosSection from "./components/RecorridosSection.vue";
+import ContactSection from "./components/ContactSection.vue";
+import FooterSection from "./components/FooterSection.vue";
+</script>
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
-
-  .logo {
-    margin: 0 2rem 0 0;
-  }
-
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-}
+<style>
+@import "bootstrap-icons/font/bootstrap-icons.css";
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap');
 </style>

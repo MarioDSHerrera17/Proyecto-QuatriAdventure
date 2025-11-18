@@ -1,35 +1,80 @@
-@import './base.css';
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+/* Estilos base con fondo blanco */
+body {
+  @apply bg-nature-white text-gray-800;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+/* Tus estilos personalizados */
+html {
+  scroll-behavior: smooth;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(248,250,252,0.2) 100%);
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+.whatsapp-btn {
+  position: fixed;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  background-color: #25D366;
+  color: white;
+  padding: 0.8rem 1rem;
+  border-radius: 9999px;
+  font-size: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease;
+  z-index: 50;
+}
+.whatsapp-btn:hover {
+  transform: scale(1.1);
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+/* Clases utilitarias personalizadas */
+.bg-section-light {
+  background-color: #f8fafc;
+}
+
+.bg-section-white {
+  background-color: #ffffff;
+}
+
+.text-nature-primary {
+  color: #16a34a;
+}
+
+.bg-nature-primary {
+  background-color: #16a34a;
+}
+
+.border-nature-primary {
+  border-color: #16a34a;
+}
+
+.text-nature-muted {
+  color: #64748b;
+}
+
+/* Botones */
+.btn-primary {
+  @apply bg-nature-primary hover:bg-nature-dark text-white font-semibold py-3 px-6 rounded-lg transition-colors duration-300 shadow-lg hover:shadow-xl;
+}
+
+.btn-outline {
+  @apply border-2 border-nature-primary text-nature-primary hover:bg-nature-primary hover:text-white font-semibold py-2 px-5 rounded-lg transition-all duration-300;
+}
+
+/* Cards */
+.card-white {
+  @apply bg-white rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100;
+}
+
+.card-light {
+  @apply bg-nature-light rounded-xl shadow-md hover:shadow-lg transition-all duration-300;
 }
