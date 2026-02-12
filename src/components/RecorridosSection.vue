@@ -10,7 +10,7 @@
           class="card-white hover:shadow-xl transition-all duration-300"
         >
           <!-- Carrusel de imágenes -->
-          <div class="relative h-48 w-full overflow-hidden rounded-t-lg">
+          <div class="relative h-72 w-full overflow-hidden rounded-t-lg">
             <img 
               v-for="(img, imgIndex) in ruta.imagenes" 
               :key="imgIndex"
