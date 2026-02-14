@@ -50,7 +50,7 @@ html {
 }
 
 .bg-nature-primary {
-  background-color: #16a34a;
+  background-color: #127d39;
 }
 
 .border-nature-primary {
@@ -77,4 +77,38 @@ html {
 
 .card-light {
   @apply bg-nature-light rounded-xl shadow-md hover:shadow-lg transition-all duration-300;
+}
+/* Fondo con imagen reutilizable */
+.bg-image-section {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Overlay oscuro elegante */
+.bg-image-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 0;
+}
+
+/* Contenido encima del overlay */
+.section-content {
+  position: relative;
+  z-index: 10;
+}
+.bg-nosotros {
+  background-image: url('../assets/Imagenes/Logo/fondo_b.png');
+}
+
+.bg-contacto {
+  background-image: url('../assets/Imagenes/Logo/fondo_b.png');
+}
+
+.bg-rutas {
+  background-image: url('../assets/Imagenes/Logo/fondo_b.png');
 }

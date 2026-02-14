@@ -1,0 +1,17 @@
+/* Fondo oscuro turismo */
+.bg-adventure {
+  background-image: url('/images/fondo-aventura.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+}
+
+/* Overlay elegante */
+.bg-adventure::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
