@@ -1,5 +1,7 @@
 <template>
-  <section class="relative py-20 bg-gradient-to-b from-gray-100 via-white to-gray-100 border-t border-gray-200">
+  <section
+    class="relative py-20 bg-gradient-to-b from-gray-100 via-white to-gray-100 border-t border-gray-200"
+  >
     <div class="max-w-6xl mx-auto px-6">
       <div class="text-center mb-14">
         <h2 class="text-3xl md:text-4xl font-bold text-nature-primary mb-4">
@@ -13,7 +15,9 @@
 
       <!-- Fondo degradado envolvente -->
       <div class="relative flex justify-center">
-        <div class="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/40 blur-3xl opacity-40 scale-110"></div>
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-black/40 via-transparent to-black/40 blur-3xl opacity-40 scale-110"
+        ></div>
 
         <!-- Contenedor principal -->
         <div
@@ -51,7 +55,9 @@
           </div>
 
           <!-- Overlay degradado inferior -->
-          <div class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/70 to-transparent pointer-events-none"></div>
+          <div
+            class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/70 to-transparent pointer-events-none"
+          ></div>
 
           <!-- Botón play/pause -->
           <div class="absolute bottom-4 right-4 z-10">
@@ -112,6 +118,106 @@
         <p class="text-sm">
           Video demostrativo de nuestros recorridos en cuatrimoto
         </p>
+      </div>
+    </div>
+
+    <!-- Características + Equipo incluido -->
+    <div class="mt-20 grid md:grid-cols-2 gap-12 items-start">
+      <!-- Características técnicas -->
+      <div>
+        <h3 class="text-2xl font-bold text-nature-primary mb-6">
+          Características de la Grizzly 350
+        </h3>
+
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div class="flex items-start gap-4">
+            <i class="bi bi-speedometer2 text-3xl text-nature-primary"></i>
+            <div>
+              <h4 class="font-semibold">Motor 348cc</h4>
+              <p class="text-gray-600 text-sm">
+                Potente motor monocilíndrico 4 tiempos
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <i class="bi bi-gear text-3xl text-nature-primary"></i>
+            <div>
+              <h4 class="font-semibold">Transmisión automática</h4>
+              <p class="text-gray-600 text-sm">
+                Ultramatic CVT, fácil y cómoda
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <i class="bi bi-shield-check text-3xl text-nature-primary"></i>
+            <div>
+              <h4 class="font-semibold">Sistema Anti-Pendiente</h4>
+              <p class="text-gray-600 text-sm">
+                Transmisión Ultramatic® con freno motor automático que brinda
+                mayor control y seguridad en descensos pronunciados.
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <i class="bi bi-tree text-3xl text-nature-primary"></i>
+            <div>
+              <h4 class="font-semibold">Ideal para montaña</h4>
+              <p class="text-gray-600 text-sm">
+                Perfecta para rutas en Pinal de Amoles
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Equipo incluido -->
+      <div>
+        <h3 class="text-2xl font-bold text-nature-primary mb-6">
+          Equipo que te proporcionamos
+        </h3>
+
+        <div class="grid sm:grid-cols-2 gap-6">
+          <div class="flex items-start gap-4">
+            <i class="bi bi-lightbulb text-3xl text-nature-primary"></i>
+            <div>
+              <h4 class="font-semibold">Lámparas</h4>
+              <p class="text-gray-600 text-sm">Para recorridos con poca luz</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <i class="bi bi-signpost-2 text-3xl text-nature-primary"></i>
+            <div>
+              <h4 class="font-semibold">Bastones de senderismo</h4>
+              <p class="text-gray-600 text-sm">
+                Mayor estabilidad en caminatas
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <i class="bi bi-cloud-rain text-3xl text-nature-primary"></i>
+            <div>
+              <h4 class="font-semibold">Impermeable completo</h4>
+              <p class="text-gray-600 text-sm">
+                Protección total contra lluvia
+              </p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-4">
+            <i class="bi bi-eyeglasses text-3xl text-nature-primary"></i>
+            <div>
+              <h4 class="font-semibold">Guantes y goggles</h4>
+              <p class="text-gray-600 text-sm">
+                Seguridad y comodidad garantizada
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -196,8 +302,12 @@ onMounted(() => {
 
 /* Spinner */
 @keyframes spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .animate-spin {
   animation: spin 1s linear infinite;
