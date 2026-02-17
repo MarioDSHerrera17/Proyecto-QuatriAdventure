@@ -2,7 +2,7 @@
   <nav
     :class="[
       'fixed w-full z-50 transition-all duration-300',
-      scrolled ? 'bg-white shadow-lg' : 'bg-transparent',
+      scrolled ? 'bg-black shadow-lg' : 'bg-transparent',
     ]"
   >
     <div class="max-w-7xl mx-auto flex justify-between items-center p-4">
@@ -12,10 +12,10 @@
       </div>
 
       <ul class="hidden md:flex gap-6 text-sm" :class="scrolled ? 'text-gray-700' : 'text-white'">
-        <li><a href="#inicio" class="hover:text-nature-primary transition-colors">Inicio</a></li>
-        <li><a href="#nosotros" class="hover:text-nature-primary transition-colors">Nosotros</a></li>
-        <li><a href="#rutas" class="hover:text-nature-primary transition-colors">Recorridos</a></li>
-        <li><a href="#contacto" class="hover:text-nature-primary transition-colors">Contacto</a></li>
+        <li><a href="#inicio" class="hover:text-nature-primary transition-colors"><strong class="text-nature-primary">Inicio</strong></a></li>        
+        <li><a href="#nosotros" class="hover:text-nature-primary transition-colors"><strong class="text-nature-primary">Nosotros</strong></a></li>
+        <li><a href="#rutas" class="hover:text-nature-primary transition-colors"> <strong class="text-nature-primary">Recorridos</strong></a></li>
+        <li><a href="#contacto" class="hover:text-nature-primary transition-colors"> <strong class="text-nature-primary">Contacto</strong></a></li>
       </ul>
     </div>
   </nav>
