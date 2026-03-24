@@ -22,19 +22,6 @@ JavaScript (ES6+)
   /router        # Configuración de rutas
   App.vue        # Componente raíz
   main.js        # Punto de entrada
-📦 Instalación y uso
-Clona el repositorio:
-git clone https://github.com/tu-usuario/tu-repositorio.git
-Entra al directorio del proyecto:
-cd tu-repositorio
-Instala las dependencias:
-npm install
-Ejecuta el servidor de desarrollo:
-npm run dev
-Abre en tu navegador:
-http://localhost:5173
-📸 Funcionalidades principales
-🗺️ Catálogo de recorridos
 
 Cada recorrido incluye:
 
